@@ -1,0 +1,31 @@
+# Binary
+/terraform-provider-discord
+/terraform-provider-discord_v*
+
+# Build artifacts
+/dist/
+/bin/
+
+# Go cache / coverage
+*.out
+coverage.*
+*.test
+
+# Terraform
+*.tfstate
+*.tfstate.*
+.terraform/
+.terraform.lock.hcl
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+.terraformrc
+terraform.rc
+
+# IDE / OS
+.idea/
+.vscode/
+.DS_Store
