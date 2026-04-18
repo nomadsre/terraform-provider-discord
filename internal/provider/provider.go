@@ -104,6 +104,8 @@ func (p *DiscordProvider) Configure(ctx context.Context, req provider.ConfigureR
 
 func (p *DiscordProvider) Resources(_ context.Context) []func() resource.Resource {
 	return []func() resource.Resource{
+		NewCategoryResource,
+		NewChannelResource,
 		NewRoleResource,
 	}
 }
