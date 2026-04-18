@@ -112,5 +112,8 @@ func (p *DiscordProvider) Resources(_ context.Context) []func() resource.Resourc
 }
 
 func (p *DiscordProvider) DataSources(_ context.Context) []func() datasource.DataSource {
-	return nil
+	return []func() datasource.DataSource{
+		NewGuildDataSource,
+		NewRoleDataSource,
+	}
 }
