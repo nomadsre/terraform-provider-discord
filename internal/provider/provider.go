@@ -103,7 +103,9 @@ func (p *DiscordProvider) Configure(ctx context.Context, req provider.ConfigureR
 }
 
 func (p *DiscordProvider) Resources(_ context.Context) []func() resource.Resource {
-	return nil
+	return []func() resource.Resource{
+		NewRoleResource,
+	}
 }
 
 func (p *DiscordProvider) DataSources(_ context.Context) []func() datasource.DataSource {
