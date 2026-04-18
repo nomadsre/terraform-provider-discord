@@ -1,0 +1,1 @@
+terraform import discord_category.ops 123456789012345678:987654321098765432

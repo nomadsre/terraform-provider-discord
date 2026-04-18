@@ -1,0 +1,1 @@
+terraform import discord_role.admin 123456789012345678:987654321098765432
